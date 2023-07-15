@@ -1,18 +1,42 @@
-<section class="container h-100 text">
-  <h1>lazy loading Admin</h1>
-<ol>
-  <li routerLink="admin/login">
-    Admin login </li>
-  <li routerLink="admin/list">list</li>
-</ol>
-
-<h1>lazy loading User</h1>
-<ol>
-  <li routerLink="user/login">login</li>
-  <li routerLink="user/list">list</li>
-</ol>
-
-
-</section>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Admin
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="admin/login">login</a></li>
+            <li><a class="dropdown-item" routerLink="admin/list">login</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="user/login">login</a></li>
+            <li><a class="dropdown-item" routerLink="user/list">login</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
 
 <router-outlet></router-outlet>
